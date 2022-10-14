@@ -1,5 +1,6 @@
 from re import X
 import requests
+
 class Nutrition:
 
     def __init__(self):
@@ -25,11 +26,11 @@ class Nutrition:
         return self.r[0]['fat_total_g']
 
 x= Nutrition()
-x.set_query('apple')
-print(x.get_data())
-print(x.get_calories())
-print(x.get_protein())
-print(x.get_carbohydrates())
-print(x.get_cholesterol())
-print(x.get_fat())
+# x.set_query('apple')
+# print(x.get_data())
+# print(x.get_calories())
+# print(x.get_protein())
+# print(x.get_carbohydrates())
+# print(x.get_cholesterol())
+# print(x.get_fat())
 
