@@ -99,9 +99,7 @@ def how_to_make_food():
 
 
             option=input("Enter the option you want to search for: \n 1.Instructions \n 2. Ingredients \n 3. Calories\n 4.all\n Enter q to exit the program \n ")
-
-
-
+        print('Thank you for using Nutrition')
     except:
         print("we don't have this food")
 

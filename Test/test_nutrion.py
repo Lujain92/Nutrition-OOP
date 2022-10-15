@@ -30,8 +30,39 @@ def test_two():
   }
 ]
     assert actual== expected
+def test_three():
+    item=Nutrition()
+    item.set_query('pizza')
+    item.get_data()
+    actual=item.get_protein()
+    expected=11.4
+    assert actual== expected
+
+def test_four():
+    item=Nutrition()
+    item.set_query('pizza')
+    item.get_data()
+    actual=item.get_carbohydrates()
+    expected=32.9
+    assert actual== expected
+
+def test_five():
+    item=Nutrition()
+    item.set_query('pizza')
+    item.get_data()
+    actual=item.get_cholesterol()
+    expected=16
+    assert actual== expected
+
+def test_six():
+    item=Nutrition()
+    item.set_query('pizza')
+    item.get_data()
+    actual=item.get_fat()
+    expected=9.8
+    assert actual== expected
 # @pytest.mark.skip
-# def test_three():
+# def test_seven():
 #     recepies=Recepies()
 #     recepies.set_query('italian wedding soup')
 #     recepies.get_data()
@@ -39,10 +70,11 @@ def test_two():
 #     expected=""
 #     assert actual== expected
 # @pytest.mark.skip   
-# def test_four():
+# def test_eight():
 #     recepies=Recepies()
 #     recepies.set_query('italian wedding soup')
 #     recepies.get_data()
 #     actual=recepies.get_instructions()
 #     expected=""
 #     assert actual== expected    
+# @pytest.mark.skip
