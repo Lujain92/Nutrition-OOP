@@ -20,8 +20,11 @@ class Nutrition:
         self.r = requests.get(self.url, headers={'X-Api-Key': os.getenv("API_KEY")}).json()
         return self.r    
     def get_calories(self):
-        return self.r[0]['calories']
+        cal=self.r[0]['calories']
+        return cal    
 
+
+        
     def get_protein(self):
         return self.r[0]['protein_g']
     def get_carbohydrates(self):
@@ -32,5 +35,6 @@ class Nutrition:
         return self.r[0]['fat_total_g']
 load_dotenv()
 item= Nutrition()
+
 
 

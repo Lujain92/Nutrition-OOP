@@ -5,20 +5,28 @@ def welcome():
     print(""" Welcome to our app that help you to be healthy 
     by let you have an access of a lot of food and the data
     regarding carb,protien,fat content and the caloreis 
-    and you can put any recepies you want and we will give you an instrcutrion,
-     ingredients and the caloreis for this recepie
+    you can put any recepies you want and we will give you 
+    an instrcutrion, ingredients and the caloreis for this recepie
     """)
     print("========================================")
     choose=input("""
     if you want to know data about specific food press 1
     if you want to put a type of food and give you how to make press 2
+    if you want to exit press q
     """)
-    if choose == "1":
-        return data_of_food()
-    elif choose=="2":
-        return how_to_make_food()
-    else:
-        "please choose 1 or 2"
+    while True:
+        if choose=="q":
+            break
+        if choose == "1":
+            return data_of_food()
+        elif choose=="2":
+            return how_to_make_food()
+        else:
+            print("please choose 1 or 2")
+        choose=input("""
+    if you want to know data about specific food press 1
+    if you want to put a type of food and give you how to make press 2
+    """)
 
 def data_of_food():
     '''
