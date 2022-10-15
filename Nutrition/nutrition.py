@@ -1,7 +1,13 @@
-from re import X
+import os
 import requests
+from dotenv import load_dotenv
+
 
 class Nutrition:
+    '''
+    this class hit a API called nutrition and take the data regrading the food you enter
+    the data are : caloreis, carbs, protien, fat, and cholestrol
+    '''
 
     def __init__(self):
         self.query= None
@@ -11,7 +17,7 @@ class Nutrition:
         self.query=query
     def get_data(self):
         self.url = 'https://api.api-ninjas.com/v1/nutrition?query={}'.format(self.query)
-        self.r = requests.get(self.url, headers={'X-Api-Key': '/F21ZHdQSAnFvWm1wPtgDg==T0gB03ZqMXBWg0ID'}).json()
+        self.r = requests.get(self.url, headers={'X-Api-Key': os.getenv("API_KEY")}).json()
         return self.r    
     def get_calories(self):
         return self.r[0]['calories']
@@ -24,13 +30,7 @@ class Nutrition:
         return self.r[0]['cholesterol_mg']
     def get_fat(self):
         return self.r[0]['fat_total_g']
+load_dotenv()
+item= Nutrition()
 
-x= Nutrition()
-# x.set_query('apple')
-# print(x.get_data())
-# print(x.get_calories())
-# print(x.get_protein())
-# print(x.get_carbohydrates())
-# print(x.get_cholesterol())
-# print(x.get_fat())
 
