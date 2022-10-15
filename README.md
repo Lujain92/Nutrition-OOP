@@ -7,7 +7,7 @@
 
 **How to initialize/run your application ?**
 * You must install the requirements in the requirements.txt file using `pip install -r requirement.txt`
-* `python Nutrition/main.py` -- To run the functions
+* `python Nutrition/main.py` -- To run the  functions
 
 **How to test the application**
 * `pytest`
