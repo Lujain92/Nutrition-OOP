@@ -12,4 +12,4 @@
 **How to test the application**
 * `pytest`
 
-[pull request link](https://github.com/Lujain92/Nutrition-OOP/pull/5)
+[pull request link](https://github.com/Lujain92/Nutrition-OOP/pull/6)
