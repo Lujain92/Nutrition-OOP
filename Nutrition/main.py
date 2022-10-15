@@ -48,7 +48,7 @@ def data_of_food():
         option=input('Enter the option you want to search for: \n 1. Calories \n 2. Protein \n 3. Carbohydrates \n 4. Cholesterol \n 5. Fat \n 6.all\nEnter q to exit the program \n')
         while option != 'q' :
             if option == '1':
-                print(f"the calories in {gram} of {food}is : ",item.get_calories())
+                print(f"the calories in {gram} of {food} is : ",item.get_calories())
             elif option == '2':
                 print(f"the protein in  {gram} of {food} is : ", item.get_protein())
             elif option == '3':
@@ -56,13 +56,13 @@ def data_of_food():
             elif option == '4':
                 print(f"the cholesterol in  {gram} of {food} is : ",item.get_cholesterol())
             elif option == '5':
-                print(f"the fat in {gram} of {food}is : ", item.get_fat())
+                print(f"the fat in {gram} of {food} is : ", item.get_fat())
             elif option== "6":
                 print(f"{gram} of {food} contain {item.get_calories()}  calories and {item.get_protein()} of protein and {item.get_carbohydrates()} of carbohydrate and {item.get_fat()} of fat and {item.get_cholesterol()} of cholerstrol")
 
             else:
                  print('Invalid option')
-            option=input('Enter the option you want to search for: \n 1. Calories \n 2. Protein \n 3. Carbohydrates \n 4. Cholesterol \n 5. Fat \n 6.all\nEnter q to exit the program \n')
+            option=input('Enter the option you want to search for: \n 1. Calories \n 2. Protein \n 3. Carbohydrates \n 4. Cholesterol \n 5. Fat \n 6.all \n Enter q to exit the program \n')
         print('Thank you for using Nutrition')
 
     except:
@@ -98,7 +98,7 @@ def how_to_make_food():
                  print('Invalid option')
 
 
-            option=input("Enter the option you want to search for: \n 1.Instructions \n 2. Ingredients \n 3. Calories\n 4.all\n Enter q to exit the program \n ")
+            option=input("Enter the option you want to search for: \n 1.Instructions \n 2. Ingredients \n 3. Calories\n 4.all \n Enter q to exit the program \n ")
         print('Thank you for using Nutrition')
     except:
         print("we don't have this food")
