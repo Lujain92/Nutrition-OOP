@@ -22,7 +22,7 @@ def user_interface():
             print(f"the fat in {query} is : ", Nutrition.get_fat(x))
         else:
             print('Invalid option')
-        option=input('Enter the option you want to search for: \n 1. Calories \n 2. Protein \n 3. Carbohydrates \n 4. Cholesterol \n 5. Fat \nEnter q to exit the program \n')
+        option=input('Enter the Option you want to search for: \n 1. Calories \n 2. Protein \n 3. Carbohydrates \n 4. Cholesterol \n 5. Fat \nEnter q to exit the program \n')
     print('Thank you for using Nutrition')
 
     # if option=='1':
